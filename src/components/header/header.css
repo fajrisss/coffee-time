@@ -1,0 +1,46 @@
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  padding: 8rem 0rem;
+}
+
+.header__logo{
+  font-family: var(--font-logo);
+}
+
+.header__logo > p {
+  font-size: 10rem;
+}
+
+.header__deskripsi p{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 45%;
+  text-align: justify;
+}
+
+.header__deskripsi >button {
+  background-color: var(--color-bg-soklat);
+  border-radius: 2rem;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  color: var(--color-font-soklat);
+  cursor: pointer;
+  margin-top: 1.2rem;
+}
+
+@media screen and (max-width: 900px){
+  .header__logo > p {
+    font-size: 7rem;
+  }
+
+  .header__deskripsi p{
+    text-align: left;
+    width: 90%;
+  }
+}

@@ -1,0 +1,42 @@
+.section__about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.section__about-deskripsi {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 2rem;
+}
+
+.section__about-deskripsi p {
+  text-align: justify;
+}
+
+.section__about-img{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 900px){
+  .section__about{
+    flex-direction: column;
+  }
+
+  .section__about-deskripsi{
+    width: 120%;
+  }
+
+  .section__about-img {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section__about-img> img{
+    width: 200%;
+  }
+}

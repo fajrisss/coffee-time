@@ -1,0 +1,36 @@
+.section__order{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #603709a9;
+  border-radius: 4rem;
+  padding: 2rem;
+}
+
+.section__order-content{
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.section__order-content > h1 {
+  color:var(--color-bg-soklat);
+}
+
+.section__order-content > p{
+  color: white;
+}
+
+@media screen and (max-width: 900px){
+  .section__order {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    width: 130%;
+  }
+
+  .section_order-img > img{
+    width: 100%;
+  }
+
+}

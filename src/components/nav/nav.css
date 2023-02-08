@@ -1,0 +1,123 @@
+.nav {
+  width: 100%;
+  color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: absolute;
+  padding: 0 6rem;
+}
+
+.nav__logo p{
+ font-family: var(--font-logo);
+ font-size: 2.5rem;
+ align-items: center;
+ padding-top: 1rem;
+}
+
+.nav__logo  span {
+  color: var(--color-bg-soklat);
+}
+
+.nav__logo p:hover{
+  font-family: var(--font-logo);
+  font-size: 2.5rem;
+  align-items: center;
+  padding-top: 1rem;
+  color: var(--color-bg-soklat);
+ }
+ 
+ .nav__logo  span:hover {
+   color: white;
+ }
+
+.nav__links{
+  display: flex;
+  flex-direction: row;
+}
+.nav__links a{
+  padding: 0 1rem;
+}
+
+.nav__login{
+  display: flex;
+}
+
+.nav__login a{
+  padding: 0 1rem;
+}
+
+.nav__login > .nav__login-signup {
+  background-color: var(--color-bg-soklat);
+  border-radius: 2rem;
+  width: 6rem;
+  height: 1.5rem;
+  text-align: center;
+  color: var(--color-font-soklat);
+  cursor: pointer;
+}
+
+.app__navbar-smallscreen{
+  display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  background: #603809;
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: #603809;
+  cursor: pointer;
+  position: absolute;
+  /* top: 20px;
+  right: 20px; */
+  transition: 0.5s ease;
+}
+
+.app__navbar-smallscreen-links{
+  list-style: none;
+  /* padding: auto; */
+  justify-content: center;
+  text-align: center;
+}
+
+.app__navbar-smallscreen-links li{
+  margin: 2rem;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  align-self: center;
+  text-align: center;
+}
+
+.app__navbar-smallscreen-links li:hover{
+  color: var(--color-bg-soklat);
+
+}
+
+@media screen and (max-width: 900px){
+  .nav__links {
+    display: none;
+  }
+  .nav__login{
+    display: none;
+  }
+
+  .app__navbar-smallscreen{
+    display: flex;
+  }
+  .nav {
+    padding: 0 0 0  2rem;
+  }
+}

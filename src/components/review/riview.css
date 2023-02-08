@@ -1,0 +1,39 @@
+.section__review{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section__review-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-bg-pink);
+  border: 1px solid var(--color-bg-soklat);
+  padding: 5rem 3rem 2rem 3rem;
+  gap: 1.3rem;
+}
+
+.section__review-content > img {
+  width: 80px;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  align-self: center;
+}
+
+@media screen and (max-width: 900px){
+  .section__review{
+    width: 130%;
+  }
+
+  .section__review-content{
+    padding: 35px 22px;
+  }
+
+  .section__review{
+    text-align: center;
+  }
+}
